@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <title>ISESchool 2019 - Hangzhou, China</title>
     <meta name="description" content="ISESchool 2019 - Hangzhou, China">
-    <meta name="keywords" content="iseschool 2019, ise school 2019, iseschool’19, zhejiang university, zju , hangzhou, china">
+    <meta name="keywords"
+        content="iseschool 2019, ise school 2019, iseschool’19, zhejiang university, zju , hangzhou, china">
     <link rel="stylesheet" href="bootstrap/3.3.0/css/bootstrap.min.css">
 
     <style>
-
         .newsdatecol {
 
             width: 22%;
@@ -37,13 +37,45 @@
 
         }
 
+
+        .important-content-col {
+
+            width: 60%;
+
+            top: 0;
+
+            /* font-weight: bold; */
+
+            text-align: left;
+
+            margin-top: 0;
+
+            vertical-align: top !important;
+
+        }
+
+        .important-date-col {
+
+            /* width: 45%; */
+
+            padding-left: 8px;
+
+            text-align: left;
+
+        }
     </style>
     <style type="text/css">
         td {
-            text-align: center; /*设置水平居中*/
-            vertical-align: middle !important; /*设置垂直居中*/
+            text-align: center;
+            /*设置水平居中*/
+            vertical-align: middle !important;
+            /*设置垂直居中*/
         }
 
+        hr {
+            margin-top: 5px;
+            margin-bottom: 15px; 
+        }
     </style>
     <script src="jquery/1.11.1/jquery.min.js"></script>
 
@@ -67,102 +99,182 @@
 
 <body>
 
-<script src="common/loadhead.js"></script>
-<script>loadheaderexecute(1);</script>
-<script>loadCarousel(1);</script>
+    <script src="common/loadhead.js"></script>
+    <script>loadheaderexecute(1);</script>
+    <script>loadCarousel(1);</script>
 
 
-<div class="container">
+    <div class="container">
 
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-md-4" role="main">
-                    <br>
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Latest News</h3>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-md-4" role="main">
+                        <br>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Latest News</h3>
+                            </div>
+
+                            <div class="panel-body" style="padding-bottom: 0;height: 228px;padding: 15px;">
+                                <table>
+                                    <tr>
+                                        <td class="newsdatecol">2019-07-30</td>
+                                        <td class="newscontentcol">The winter school is co-located with <a
+                                                href="http://nasac2019.zju.edu.cn/" target="_blank">NASAC</a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="newsdatecol">2019-07-30</td>
+                                        <td class="newscontentcol">Five speakers are invited to attend the winter
+                                            school.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- <div class="panel-footer text-right">
+                                <a href="news.html" target="_blank">More</a>
+                            </div> -->
                         </div>
+                        <!--panel-primary-->
 
-                        <div class="panel-body" style="padding-bottom: 0;height: 225px;padding: 15px;">
-                        </div>
-                        <div class="panel-footer text-right">
-                            <!-- <a href="news.html">More</a> -->
-                        </div>
-                    </div> <!--panel-primary-->
-
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Important Dates</h3>
-                        </div>
-                        <div class="panel-body" style="padding-bottom: 0;height: 228px;padding: 0 15px;">
-
-                        </div>
-                    </div>
-
-                </div><!--first column-->
-
-                <div class="col-md-8">
-                    <h2>Welcome</h2>
-                    <hr>
-                    <!-- <p style="text-align: justify;"><strong>SANER</strong> -->
-                    <p>
-                        The Intelligent Software Engineering Winter School brings together academics, researchers, practitioners, and graduate students to acquire essential knowledge and valuable skills for applying machine learning techniques to tackle software engineering challenges. The School is hosted by the Software Engineering Research Lab at Zhejiang University, which is one of the leading universities in China. Zhejiang University is actively involved in software engineering academic community and made significant progress in the research field. The school runs from Nov 25 to 27, 2019 in Hangzhou, China. 
-                    </p>
-                    <p>
-                        Lectures are given by world-leading experts in the areas of Data Science, Software Analytics and Machine Learning. The lectures are combined with hands-on experience on various practical topics including Mining Software Repositories, Qualitative Data Analysis, and  Automated Software Engineering. The objective of this school is to give young researchers in China as well as from globe opportunities to interact closely and intensively with the world-leading software engineering experts. We expect this school will benefit the attendees, the community, and eventually promote the advance of intelligent software engineering in the world.
-                    </p>
-                    <hr>
-                    
-                    <h2>About ISESchool 2019</h2>
-                    <br>
-                    <p>
-                        The First Intelligent Software Engineering Winter School will be held on November 25-27, 2019.
-                    </p>
-                </div>
-            </div> <!--first row-->
-
-            <div class="row">
-
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 padd">
-                    <div class="panel panel-warning" style="border-radius: 4px;">
-                        <div class="panel-heading clearfix">
-                            <div class="panel-title"><i class="fa fa-life-ring" aria-hidden="true"></i>&nbsp;Sponsor
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Important Dates</h3>
+                            </div>
+                            <div class="panel-body" style="padding-bottom: 0;height: 228px;padding: 15px;">
+                                <table>
+                                    <tr>
+                                        <td class="important-content-col">Early Registration Date</td>
+                                        <td class="important-date-col">October 20, 2019</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <tbody>
-                                <!-- SUPPORTED -->
-                                <tr>
-                                    <td>
-                                        <span class="supporter-logo">
-                                            <a href="http://www.zju.edu.cn/" target="_blank">
-                                                <img src="img_system/logo/zju.png" alt="zju_Logo">
-                                            </a>
-                                        </span>
-                                    </td>
 
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Sponsor</h3>
+                            </div>
+                            <div class="panel-body" style="padding-bottom: 0; padding: 15px; text-align: center;">
+                                <span class="supporter-logo">
+                                    <a href="http://www.zju.edu.cn/" target="_blank">
+                                        <img src="img_system/logo/zju.png" alt="zju_Logo">
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    <!--first column-->
+
+                    <div class="col-md-8">
+                        <h2>Welcome</h2>
+                        <hr>
+                        <!-- <p style="text-align: justify;"><strong>SANER</strong> -->
+                        <p>
+                            The Intelligent Software Engineering Winter School brings together academics, researchers,
+                            practitioners, and graduate students to acquire essential knowledge and valuable skills for
+                            applying machine learning techniques to tackle software engineering challenges. The School
+                            is hosted by the Software Engineering Research Lab at Zhejiang University, which is one of
+                            the leading universities in China. Zhejiang University is actively involved in software
+                            engineering academic community and made significant progress in the research field. The
+                            school runs from Nov 25 to 27, 2019 in Hangzhou, China.
+                        </p>
+                        <p>
+                            Lectures are given by world-leading experts in the areas of Data Science, Software Analytics
+                            and Machine Learning. The lectures are combined with hands-on experience on various
+                            practical topics including Mining Software Repositories, Qualitative Data Analysis, and
+                            Automated Software Engineering. The objective of this school is to give young researchers in
+                            China as well as from globe opportunities to interact closely and intensively with the
+                            world-leading software engineering experts. We expect this school will benefit the
+                            attendees, the community, and eventually promote the advance of intelligent software
+                            engineering in the world.
+                        </p>
+                        <br>
+
+                        <h2>Speakers</h2>
+                        <hr>
+                        <div class="row">
+                            <center>
+                                <div class="col-xs-4">
+                                    <a href="program/speakers.html#speaker4">
+                                        <img src="portrait/DanielGerman.jpg" alt="Daniel German"
+                                            height="180"><br><strong>Daniel German</strong></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="program/speakers.html#speaker1">
+                                        <img src="portrait/JamesHerbsleb.jpg" alt="James Herbsleb"
+                                            height="180"><br><strong>James Herbsleb</strong></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="program/speakers.html#speaker3">
+                                        <img src="portrait/david lo.jpg" alt="David Lo" height="180"><br><strong>David
+                                            Lo</strong></a>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="row" style="margin-top: 30px">
+                            <center>
+                                <div class="col-xs-4">
+                                    <a href="program/speakers.html#speaker5">
+                                        <img src="portrait/ZhenchangXing.jpg" alt="Zhenchang Xing"
+                                            height="180"><br><strong>Zhenchang Xing</strong></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="program/speakers.html#speaker2">
+                                        <img src="portrait/TomZimmerman.jpg" alt="Tom Zimmerman"
+                                            height="180"><br><strong>Tom Zimmerman</strong></a>
+                                </div>
+                            </center>
+                        </div>
+                        <br>
+                        <h2>About ISESchool 2019</h2>
+                        <hr>
+                        <p>
+                            The First Intelligent Software Engineering Winter School will be held on November 25-27,
+                            2019.
+                        </p>
+                    </div>
                 </div>
-            </div><!-- 第3行 赞助商-->
-            <div class="row">
-                <p>&nbsp;</p>
+
+                <br><br><br><br>
+
+                <!-- 
+                <div class="row">
+                    <div class="col-md-12 padd">
+                        <div class="panel panel-warning" style="border-radius: 4px;">
+                            <div class="panel-heading clearfix">
+                                <div class="panel-title"><i class="fa fa-life-ring" aria-hidden="true"></i>&nbsp;Sponsor
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="supporter-logo">
+                                                    <a href="http://www.zju.edu.cn/" target="_blank">
+                                                        <img src="img_system/logo/zju.png" alt="zju_Logo">
+                                                    </a>
+                                                </span>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
             </div>
-            </section>
+            <!--<div class="col-xs-12">-->
 
-        </div><!--<div class="col-xs-12">-->
-
-    </div> <!--总行-->
-</div> <!--container-->
+        </div>
+        <!--总行-->
+    </div>
+    <!--container-->
 
 
 
