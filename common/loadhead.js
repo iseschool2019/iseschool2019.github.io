@@ -67,7 +67,7 @@ function loadheaderexecute(level) {
 
 
     // add registration
-    var registration_bar=$('<li><a href="">Registration</a></li>')
+    var registration_bar=$('<li><a href="'+registration+'">Registration</a></li>')
     navbarcollapseul.append(registration_bar)
 
 
