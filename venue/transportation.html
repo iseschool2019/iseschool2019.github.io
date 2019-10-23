@@ -9,22 +9,93 @@
     <script src="../jquery/1.11.1/jquery.min.js"></script>
     <script src="../bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="../bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <style>
+        #container {
+            width: 1140px;
+            height: 440px;
+        }
+
+        .map {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        .amap-icon img {
+            width: 25px;
+            height: 34px;
+        }
+
+        .amap-marker-label{
+            border: 0;
+            background-color: transparent;
+        }
+
+        .info{
+            position: relative;
+            top: 0;
+            right: 0;
+            min-width: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=cc2f5fbaac330f8440635226c236ebda"></script>
+
+    <script>
+        //初始化地图插件
+        window.onload = function () {
+            // var map = new AMap.Map('wrapper');
+            var map = new AMap.Map('container', {
+                zoom: 16,//缩放级别
+                mapStyle: 'amap://styles/5c270b8723f331c01235fcbc205934cc', //设置地图的显示样式
+                resizeEnable: true,
+                center: [120.1365, 30.2286],
+                lang: "zh_cn" //可选值：en，zh_en, zh_cn
+            });
+            var marker = new AMap.Marker({
+                position: map.getCenter(),
+                icon: 'https://a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png',
+                offset: new AMap.Pixel(-13, -30)
+            });
+
+            marker.setMap(map);
+
+
+        }
+    </script>
+
 </head>
+
 <body>
-<script src="../common/loadhead.js"></script>
-<script>loadheaderexecute(2);</script>
-<script>loadCarousel(2);</script>
+    <script src="../common/loadhead.js"></script>
+    <script>loadheaderexecute(2);</script>
+    <script>loadCarousel(2);</script>
 
-<div class="container" >
-    <h2>ISESchool 2019 Program Venue</h2>
-    <hr>
-    TBD
-        <!-- <ul>
-            <li><strong>Venue:</strong>The Dragon Hotel Hangzhou</li>
-            <li><strong>Address:</strong>#120, Shuguang Road, Hangzhou </li>
-            <li><strong>WIFI:</strong>Please connect to “The Dragon” directly</li>
-        </ul> -->
-</div>
+    <div class="container">
+        <h2>寒假学校举办地点</h2>
+        <hr>
+        <div class="map" id="container"></div>
+        <p><img height="17px" src="../img_system/icons/venue.svg" alt="">
+            <strong>地点:</strong> 花港海航度假酒店</p>
+        <img height="17px" src="../img_system/icons/adress.svg" alt="">
+        <strong>地址:</strong> 杭州市西湖区杨公堤1号
+        <br><br>
+        <h2>交通路线</h2>
+        <hr>
+        <strong>杭州东站 &rarr; 酒店:</strong><br>
+        火车东站西公交站 乘坐 28路 到 浙大附中站，换乘 194路或318B路 到 浴鹄湾 下车。
+        <br><br>
+        <strong>杭州萧山国际机场 &rarr; 酒店:</strong><br>
+        从机场乘坐 机场大巴武林门线 到 武林门民航售票处 下车，向西步行250米，从 武林门 乘坐 318路或318B路 到 浴鹄湾 下车。
 
+        <br><br>
+
+        <h3>杭州公共交通</h3>
+        杭州公共交通发达，公交、地铁便利，公共自行车系统完善，共享单车遍布城区。酒店门口就有公交站，方便出行。如果需要乘坐出租车，只需询问酒店前台。酒店地处景区，周边名景多。有闻名国内外、享誉古至今——西湖。有鱼群嬉戏，康熙题字——花港观鱼公园。有三月樱花漫、满园郁金香——太子湾公园。还有雷峰夕照、
+        柳浪闻莺、 杨公景行、 曲院风荷、 虎跑梦泉、六和塔、三潭印月、苏堤春晓等风景名区。
+    </div>
+    <br><br><br><br><br><br>
 </body>
+
 </html>

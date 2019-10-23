@@ -99,7 +99,7 @@ function loadheaderexecute(level) {
     // li_travel.find('ul').append('<li><a href="'+visa+'">Visa Info</a></li>');
     // li_travel.find('ul').append('<li><a href="'+hotle+'">Accommodation</a></li>');
     // navbarcollapseul.append(li_travel);
-    var travel_bar=$('<li><a href="">Travel</a></li>')
+    var travel_bar=$('<li><a href="'+hotle+'">Travel</a></li>')
     navbarcollapseul.append(travel_bar)
 
 
